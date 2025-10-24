@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #e3b3e919, #dca5e6, pink,rgb(225, 200, 204));
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: linear-gradient(to right, #dfaee6, #efc1c8);
+      padding: 30px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-title {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .main-user-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .user-input-box {
+      color:#efc1c8;
+      width: 48%;
+      margin-bottom: 15px;
+    }
+
+    .user-input-box label {
+      color:#dfaee6;
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .user-input-box input {
+      background-color:#e7d7d9;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #eb358af7;
+      border-radius: 5px;
+    }
+
+    .gender-details-box {
+      margin-top: 20px;
+    }
+
+    .gender-title {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .gender-category {
+      display: flex;
+      gap: 15px;
+      margin-top: 5px;
+    }
+
+    .form-submit-btn {
+      background-color: (to right, #d595dd, #e3a1aa);
+      margin-top: 25px;
+    }
+
+    .form-submit-btn input {
+      width: 100%;
+      padding: 12px;
+      background-color: (to right, #d595dd, #e3a1aa);
+      border: none;
+      color: rgb(77, 69, 69);
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .form-submit-btn input:hover {
+      background-color: #e57184;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="form-title">Registration</h1>
+    <form action="#">
+      <div class="main-user-info">
+        <div class="user-input-box">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name" />
+        </div>
+        <div class="user-input-box">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter Username" />
+        </div>
+        <div class="user-input-box">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter Email" />
+        </div>
+        <div class="user-input-box">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number" />
+        </div>
+        <div class="user-input-box">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter Password" />
+        </div>
+        <div class="user-input-box">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" />
+        </div>
+      </div>
+
+      <div class="gender-details-box">
+        <span class="gender-title">Gender</span>
+        <div class="gender-category">
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" />
+          <label for="other">Other</label>
+        </div>
+      </div>
+
+      <div class="form-submit-btn">
+        <input type="submit" value="Register" />
+      </div>
+    </form>
+  </div>
+ </body>
+</html>
